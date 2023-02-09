@@ -1,0 +1,12 @@
+import random
+
+low_char = 'abcdefghijklmnopqrstuvwxyz'
+up_char = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+symbol = '.,?!@%&*#_-=+'
+digit = '1234567890'
+
+lenght = 16
+pas = low_char + up_char + symbol + digit
+password = ''.join(random.sample(pas, lenght))
+
+print(password)
